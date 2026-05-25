@@ -1,0 +1,77 @@
+═══════════════════════════════════════════════════════════════
+  CODE REVIEW AI - QUICK START GUIDE
+═══════════════════════════════════════════════════════════════
+
+🚀 STEP 1: Open Terminal 1 (Backend)
+───────────────────────────────────────
+cd BackEnd
+npm install
+node server.js
+
+✓ You should see: "Server is running on http://localhost:4000"
+
+───────────────────────────────────────
+🚀 STEP 2: Open Terminal 2 (Frontend)
+───────────────────────────────────────
+cd Frontend
+npm install
+npm run dev
+
+✓ You should see: "Local: http://localhost:5173/"
+
+───────────────────────────────────────
+🌐 STEP 3: Open Browser
+───────────────────────────────────────
+Go to: http://localhost:5173
+
+✓ You should see:
+  • Left side: Code editor with JavaScript code
+  • Right side: Empty (for reviews)
+  • Blue "Review" button at bottom-right
+
+───────────────────────────────────────
+✅ STEP 4: Click Review Button
+───────────────────────────────────────
+1. Keep the default code or paste your own
+2. Click the blue "Review" button
+3. Wait for "Reviewing..." message
+4. See AI-generated code review appear on the right
+
+═══════════════════════════════════════════════════════════════
+
+❌ TROUBLESHOOTING
+───────────────────────────────────────
+Problem: "Cannot connect to localhost:4000"
+Solution: Make sure backend terminal is running and shows server message
+
+Problem: "npm: command not found"
+Solution: Install Node.js from nodejs.org
+
+Problem: "Port already in use"
+Solution: Kill the process using that port or close other terminals
+
+Problem: API error in frontend
+Solution: Check backend console for errors, restart both terminals
+
+═══════════════════════════════════════════════════════════════
+
+📋 WHAT WAS FIXED
+───────────────────────────────────────
+✅ Port mismatch (3000 → 4000)
+✅ Invalid AI model name
+✅ Missing error handling
+✅ No loading indicators
+✅ Unused code variables
+✅ Wrong response format handling
+✅ Missing input validation
+✅ Poor error messages
+
+═══════════════════════════════════════════════════════════════
+
+📚 MORE INFO
+───────────────────────────────────────
+SETUP_GUIDE.md  - Detailed setup instructions
+FIXES_APPLIED.md - Complete list of all fixes
+README.md      - Additional documentation
+
+═══════════════════════════════════════════════════════════════
