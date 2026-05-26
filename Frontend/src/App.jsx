@@ -28,7 +28,8 @@ function App() {
     
     setLoading(true)
     try {
-      const response = await axios.post('http://localhost:4000/ai/get-review', { code })
+      const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:4000'
+      const response = await axios.post(`${API_URL}/ai/get-review`, { code })
       setReview(response.data.review)
     } catch (error) {
       const errorMsg = error.response?.data?.error || error.message || 'Unknown error occurred'
